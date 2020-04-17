@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import { hot } from "react-hot-loader";
 import "./App.css";
+import Main from './components/Main'
+import Header from './components/Header'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1> Hello, World! </h1>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <Header />
+    <Main />
+  </div>
+)
 
-export default App;
+export default hot(module)(App);
