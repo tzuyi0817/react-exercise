@@ -5,6 +5,7 @@ import RefsForm from './RefsForm'
 import Props from './Props'
 import Radio from './Radio'
 import RadioProps from './Radio'
+import Checkbox from './Checkbox'
 
 const style1 = {
   props: {
@@ -13,6 +14,10 @@ const style1 = {
   },
   radio: {
     color: 'gray',
+    textDecoration: 'none'
+  },
+  checkbox: {
+    color: 'green',
     textDecoration: 'none'
   }
 }
@@ -26,6 +31,7 @@ const Form = () => (
         <li><Link to='/form/props' style={style1.props}>props-form</Link></li>
         <li><Link to='/form/radio' style={style1.radio}>radio-form</Link></li>
         <li><Link to='/form/radioProps' style={style1.radio}>radio-props-form</Link></li>
+        <li><Link to='/form/checkbox' style={style1.checkbox}>checkbox-form</Link></li>
       </ul>
     </div>
 
@@ -35,6 +41,7 @@ const Form = () => (
       <Route path='/form/props' component={Props} />
       <Route path='/form/radio' component={Radio} />
       <Route path='/form/radioProps' component={RadioProps} />
+      <Route path='/form/checkbox' component={Checkbox} />
     </Switch>
   </div>
 )
