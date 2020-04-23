@@ -19,7 +19,7 @@ class RadioProps extends React.Component {
             setName={'pet'}
             setValues={['cat', 'dog', 'ferret']} />
 
-          <input type="submit" value="Submit" className="ml-2 btn btn-primary" />
+          <input type="submit" value="Submit" className="ml-2 btn btn-success" />
         </form>
       </div>
     )
@@ -31,7 +31,7 @@ function RadioSet(props) {
     <div>
       {props.setValues.map((value, index) => {
         return (
-          <label key={index} className="ml-1">
+          <label key={index} className="ml-1" style={{ textTransform: "capitalize" }}>
             <input type="radio" value={value} name={props.setName} className="ml-2" />
             {value}
           </label>

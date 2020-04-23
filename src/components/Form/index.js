@@ -4,8 +4,9 @@ import ControlledCompExample from './ControlledCompExample'
 import RefsForm from './RefsForm'
 import Props from './Props'
 import Radio from './Radio'
-import RadioProps from './Radio'
+import RadioProps from './RadioProps'
 import Checkbox from './Checkbox'
+import CheckboxProps from './CheckboxProps'
 
 const style1 = {
   props: {
@@ -32,6 +33,7 @@ const Form = () => (
         <li><Link to='/form/radio' style={style1.radio}>radio-form</Link></li>
         <li><Link to='/form/radioProps' style={style1.radio}>radio-props-form</Link></li>
         <li><Link to='/form/checkbox' style={style1.checkbox}>checkbox-form</Link></li>
+        <li><Link to='/form/checkboxProps' style={style1.checkbox}>checkbox-props-form</Link></li>
       </ul>
     </div>
 
@@ -42,6 +44,7 @@ const Form = () => (
       <Route path='/form/radio' component={Radio} />
       <Route path='/form/radioProps' component={RadioProps} />
       <Route path='/form/checkbox' component={Checkbox} />
+      <Route path='/form/checkboxProps' component={CheckboxProps} />
     </Switch>
   </div>
 )
