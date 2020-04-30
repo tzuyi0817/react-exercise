@@ -5,4 +5,11 @@
 
 li {
   list-style-type: none;
+  padding: 10px;
+  border: 2px solid gray;
+  margin-right: 10px;
+}
+
+ul {
+  display: flex;
 }

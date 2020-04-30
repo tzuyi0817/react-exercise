@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import Roster from '../components/Roster'
 import Schedule from '../components/Schedule'
 import Form from '../components/Form'
+import TodoExample from '../components/TodoExample'
 
 const Main = () => (
   <main>
@@ -12,6 +13,7 @@ const Main = () => (
       <Route path='/roster' component={Roster} />
       <Route path='/schedule' component={Schedule} />
       <Route path='/form' component={Form} />
+      <Route path='/todo' component={TodoExample} />
     </Switch>
   </main>
 )
