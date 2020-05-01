@@ -6,8 +6,14 @@
 li {
   list-style-type: none;
   padding: 10px;
+  border: 1px solid black;
+  margin: 0 5px
+}
+
+.todo-list {
+  padding: 10px;
   border: 2px solid gray;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
 }
 
 ul {
